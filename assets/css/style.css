@@ -17,7 +17,7 @@
 }
 
 html{
-    background-color:#ccc;
+    background-color:#fff;
     color: #1D1F18 ;
     font-family: 'Josefin Sans', sans-serif;
     font-size:18px;
@@ -123,9 +123,10 @@ header{
     text-align: center;
 }
 
-.hero h1 span{
+.hero h1 span:nth-child(1){
     color: white;
     font-weight: 900;
+    background-color:#97958B; 
 }
 
 .hero h1 span:nth-child(2){
@@ -150,3 +151,72 @@ header{
     font-size: 120%;
     font-weight: 200;
 }
+
+
+
+/*--------------------------*/
+/* HEADER */
+/*--------------------------*/
+
+section.separator{
+    max-height: 40px;
+}
+.separator{
+    background-color: white;
+}
+
+.separator .row{
+    display: flex;
+    max-width: 100%;
+}
+
+.separator .row div{
+    flex-grow: 1;
+    flex-direction: row;
+    height: 10px;
+}
+
+.separator .row:nth-child(1) div:nth-child(1){
+    flex-grow: 1;
+    flex-direction: row;
+    height: 40px;
+    background:
+        linear-gradient(45deg, #97958b 45px, transparent 45px)64px 64px,
+        linear-gradient(45deg, #97958B 45px, transparent 45px,transparent 91px, #fff 91px, #fff 135px, transparent 135px),
+        linear-gradient(-45deg, #FFEA55 23px, transparent 23px, transparent 68px,#FFEA55 68px,#FFEA55 113px,transparent 113px,transparent 158px,#FFEA55 158px);
+        background-color:#fff;
+        background-size: 128px 128px;
+}
+
+/*--------------------------*/
+/* ABOUT */
+/*--------------------------*/
+
+
+
+.about .row { 
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+}
+
+.portrait{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.portrait img{
+    width:100px;
+    float: left;
+}
+
+.portrait span{
+    color:#97958B;
+    font-size: 110%;
+}
+
+
+
