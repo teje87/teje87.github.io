@@ -100,6 +100,27 @@ header{
     padding-right: 30px;
     transition: color .8s;
 }
+.main-nav  a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.main-nav  a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
 
 .main-nav a:hover{
     color: #1D1F18;
@@ -200,12 +221,11 @@ section.separator{
     flex-direction: row;
 }
 
+
+
 .portrait{
+    flex-grow: 1;
     
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 
 .portrait img{
@@ -217,6 +237,44 @@ section.separator{
     color:#97958B;
     font-size: 110%;
 }
+
+.portrait p{
+    width: 500px;
+    text-align: left;
+}
+
+.wraper{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.skillset{
+    flex-grow: 1;
+    text-align: right;
+}
+
+.skillset .wraper ul {
+    
+}
+
+.skillset .wraper li {
+    display: inline-block;
+}
+
+.skillset .wraper li img{
+    width: 40px;
+}
+
+/*--------------------------*/
+/* DOING */
+/*--------------------------*/
+
+.doing{
+    background-color: #97958B;
+}
+
+
 
 
 
