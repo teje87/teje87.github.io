@@ -271,9 +271,37 @@ section.separator{
 /*--------------------------*/
 
 .doing{
-    background-color: #97958B;
+    background-color: #fff;
 }
 
+.doing .row{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.doing .skill{
+
+    flex-grow: 1;
+    background-color: #FFEA55;
+    height: 450px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.li-logo{
+    width: 30px;
+    transform: translateY(30%)
+}
+
+.skill ul{
+    list-style: none;
+}
+.skill ul li{
+    text-align: center;
+    color: #1D1F18
+}
 
 
 
