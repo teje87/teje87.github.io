@@ -327,7 +327,7 @@ section.separator{
 /*--------------------------*/
 
 footer{
-    height: 250px;
+    height: 150px;
     background-color: #97958b;
 }
 
@@ -342,7 +342,8 @@ footer ul {
 footer .row{
     position: relative;
     top:50%;
-    
+    transform: translateY(-50%)
+
 }
 
 footer ul li {
