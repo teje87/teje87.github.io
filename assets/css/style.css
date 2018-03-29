@@ -278,31 +278,58 @@ section.separator{
     display: flex;
     flex-direction: row;
     height: 100%;
-    margin-top: 50px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
 .doing .skill{
-
     flex-grow: 1;
     background-color: #FFEA55;
     height: 450px;
-    max-width: 300px;
+    width: 400px;
     text-align: center;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 .li-logo{
-    width: 30px;
+    width: 20px;
     transform: translateY(30%)
 }
 
 .skill ul{
     list-style: none;
-}
-.skill ul li{
+    margin-top: 20px;
     text-align: center;
-    color: #1D1F18
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
 }
 
+.skill h1{
+    margin-top: 20px;
+}
+.skill ul li{
+    text-align: left;
+    color: #1D1F18;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+
+/*--------------------------*/
+/* FOOTER */
+/*--------------------------*/
+
+footer{
+    height: 250px;
+    background-color: #97958b;
+}
 
 
 
